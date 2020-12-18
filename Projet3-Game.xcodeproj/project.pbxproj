@@ -92,8 +92,6 @@
 				8876E33125825C4D00467B2B /* main.swift */,
 				8876E34F25826B2100467B2B /* EngineGame.swift */,
 				8876E34C25825F4600467B2B /* Team.swift */,
-				8876E34825825DFF00467B2B /* Character.swift */,
-				8876E34325825DD800467B2B /* Weapon.swift */,
 				8876E3522583646800467B2B /* AdjustmentVariable.swift */,
 				88C002C1258BFCCD00D6491A /* Characters */,
 				88C002C0258BFCA700D6491A /* Weapons */,
@@ -104,6 +102,7 @@
 		88C002C0258BFCA700D6491A /* Weapons */ = {
 			isa = PBXGroup;
 			children = (
+				8876E34325825DD800467B2B /* Weapon.swift */,
 				885CFB7F2588D1F100F39670 /* Sword.swift */,
 				885CFB822588D1FF00F39670 /* Axe.swift */,
 				885CFB852588D20C00F39670 /* Hammer.swift */,
@@ -117,6 +116,7 @@
 		88C002C1258BFCCD00D6491A /* Characters */ = {
 			isa = PBXGroup;
 			children = (
+				8876E34825825DFF00467B2B /* Character.swift */,
 				885CFB702588CB6F00F39670 /* Knight.swift */,
 				885CFB732588CB8800F39670 /* Goblin.swift */,
 				885CFB762588CBA200F39670 /* Ogre.swift */,
