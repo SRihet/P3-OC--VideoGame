@@ -11,7 +11,6 @@ import Foundation
  Set the game parameters for each character
  */
 
-
 //Parameters of the knight
 var knightPv: Int = 120
 let knightFullPv: Int = 120
@@ -37,7 +36,12 @@ var elfPv:Int = 200
 let elfFullPv:Int = 200
 var elfDammage:Int = 20
 
-//Parameter of the magic box
+//Parameters of the magus
+var magusPv:Int = 100
+let magusFullPv:Int = 100
+var magusRecovery:Int = 25
+
+//Parameter of the magic weapon 
 var magicDamage:Int = 40
 
 

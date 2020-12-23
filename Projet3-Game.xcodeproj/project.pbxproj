@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		884633B7259125100077528F /* FeatureOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884633B6259125100077528F /* FeatureOne.swift */; };
+		884633BA259125200077528F /* FeatureTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884633B9259125200077528F /* FeatureTwo.swift */; };
+		884633BE259125350077528F /* FeatureThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884633BD259125350077528F /* FeatureThree.swift */; };
+		884633C12591303E0077528F /* Magus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884633C02591303E0077528F /* Magus.swift */; };
+		884633C5259131160077528F /* MagicWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884633C4259131160077528F /* MagicWeapon.swift */; };
 		885CFB712588CB6F00F39670 /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885CFB702588CB6F00F39670 /* Knight.swift */; };
 		885CFB742588CB8800F39670 /* Goblin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885CFB732588CB8800F39670 /* Goblin.swift */; };
 		885CFB772588CBA200F39670 /* Ogre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885CFB762588CBA200F39670 /* Ogre.swift */; };
@@ -21,7 +26,6 @@
 		8876E34425825DD800467B2B /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8876E34325825DD800467B2B /* Weapon.swift */; };
 		8876E34925825DFF00467B2B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8876E34825825DFF00467B2B /* Character.swift */; };
 		8876E34D25825F4600467B2B /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8876E34C25825F4600467B2B /* Team.swift */; };
-		8876E35025826B2100467B2B /* EngineGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8876E34F25826B2100467B2B /* EngineGame.swift */; };
 		8876E3532583646800467B2B /* AdjustmentVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8876E3522583646800467B2B /* AdjustmentVariable.swift */; };
 		88C002BE258B9E8E00D6491A /* MagicWand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C002BD258B9E8E00D6491A /* MagicWand.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +43,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		884633B6259125100077528F /* FeatureOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureOne.swift; sourceTree = "<group>"; };
+		884633B9259125200077528F /* FeatureTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTwo.swift; sourceTree = "<group>"; };
+		884633BD259125350077528F /* FeatureThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureThree.swift; sourceTree = "<group>"; };
+		884633C02591303E0077528F /* Magus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magus.swift; sourceTree = "<group>"; };
+		884633C4259131160077528F /* MagicWeapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicWeapon.swift; sourceTree = "<group>"; };
 		885CFB702588CB6F00F39670 /* Knight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
 		885CFB732588CB8800F39670 /* Goblin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goblin.swift; sourceTree = "<group>"; };
 		885CFB762588CBA200F39670 /* Ogre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ogre.swift; sourceTree = "<group>"; };
@@ -54,7 +63,6 @@
 		8876E34325825DD800467B2B /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		8876E34825825DFF00467B2B /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		8876E34C25825F4600467B2B /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		8876E34F25826B2100467B2B /* EngineGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineGame.swift; sourceTree = "<group>"; };
 		8876E3522583646800467B2B /* AdjustmentVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustmentVariable.swift; sourceTree = "<group>"; };
 		88C002BD258B9E8E00D6491A /* MagicWand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicWand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,7 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				8876E33125825C4D00467B2B /* main.swift */,
-				8876E34F25826B2100467B2B /* EngineGame.swift */,
+				884633B6259125100077528F /* FeatureOne.swift */,
+				884633B9259125200077528F /* FeatureTwo.swift */,
+				884633BD259125350077528F /* FeatureThree.swift */,
 				8876E34C25825F4600467B2B /* Team.swift */,
 				8876E3522583646800467B2B /* AdjustmentVariable.swift */,
 				88C002C1258BFCCD00D6491A /* Characters */,
@@ -109,6 +119,7 @@
 				885CFB882588D21F00F39670 /* Bow.swift */,
 				885CFB8B2588D22B00F39670 /* Dagger.swift */,
 				88C002BD258B9E8E00D6491A /* MagicWand.swift */,
+				884633C4259131160077528F /* MagicWeapon.swift */,
 			);
 			name = Weapons;
 			sourceTree = "<group>";
@@ -122,6 +133,7 @@
 				885CFB762588CBA200F39670 /* Ogre.swift */,
 				885CFB792588CBB100F39670 /* Centaur.swift */,
 				885CFB7C2588CBBD00F39670 /* Elf.swift */,
+				884633C02591303E0077528F /* Magus.swift */,
 			);
 			name = Characters;
 			sourceTree = "<group>";
@@ -153,7 +165,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					8876E32D25825C4D00467B2B = {
 						CreatedOnToolsVersion = 12.2;
@@ -184,20 +196,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				885CFB7A2588CBB100F39670 /* Centaur.swift in Sources */,
+				884633BE259125350077528F /* FeatureThree.swift in Sources */,
 				885CFB8C2588D22B00F39670 /* Dagger.swift in Sources */,
 				885CFB832588D1FF00F39670 /* Axe.swift in Sources */,
 				8876E34D25825F4600467B2B /* Team.swift in Sources */,
 				885CFB772588CBA200F39670 /* Ogre.swift in Sources */,
 				885CFB7D2588CBBD00F39670 /* Elf.swift in Sources */,
-				8876E35025826B2100467B2B /* EngineGame.swift in Sources */,
 				885CFB802588D1F100F39670 /* Sword.swift in Sources */,
 				885CFB742588CB8800F39670 /* Goblin.swift in Sources */,
 				8876E34425825DD800467B2B /* Weapon.swift in Sources */,
 				885CFB892588D21F00F39670 /* Bow.swift in Sources */,
+				884633B7259125100077528F /* FeatureOne.swift in Sources */,
 				8876E33225825C4D00467B2B /* main.swift in Sources */,
+				884633BA259125200077528F /* FeatureTwo.swift in Sources */,
 				8876E3532583646800467B2B /* AdjustmentVariable.swift in Sources */,
 				885CFB862588D20C00F39670 /* Hammer.swift in Sources */,
+				884633C12591303E0077528F /* Magus.swift in Sources */,
 				88C002BE258B9E8E00D6491A /* MagicWand.swift in Sources */,
+				884633C5259131160077528F /* MagicWeapon.swift in Sources */,
 				8876E34925825DFF00467B2B /* Character.swift in Sources */,
 				885CFB712588CB6F00F39670 /* Knight.swift in Sources */,
 			);
@@ -324,6 +340,7 @@
 		8876E33625825C4D00467B2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DH5GFY2YA;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -335,6 +352,7 @@
 		8876E33725825C4D00467B2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DH5GFY2YA;
 				ENABLE_HARDENED_RUNTIME = YES;
