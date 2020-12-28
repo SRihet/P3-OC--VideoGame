@@ -12,36 +12,36 @@ import Foundation
  */
 
 //Parameters of the knight
-var knightPv: Int = 120
-let knightFullPv: Int = 120
-var knightDammage:Int = 25
+var knightPv: Int = 12
+let knightFullPv: Int = 12
+var knightDammage:Int = 3
 
 //Parameters of the goblin
-var goblinPv:Int = 70
-let goblinFullPv:Int = 70
-var goblinDammage:Int = 35
+var goblinPv:Int = 7
+let goblinFullPv:Int = 7
+var goblinDammage:Int = 4
 
 //Parameters of the ogre
-var ogrePv:Int = 60
-let ogreFullPv:Int = 60
-var ogreDammage:Int = 45
+var ogrePv:Int = 6
+let ogreFullPv:Int = 6
+var ogreDammage:Int = 5
 
 //Parameters of the centaur
-var CentaurPv:Int = 100
-let CentaurFullPv:Int = 100
-var CentaurDammage:Int = 30
+var CentaurPv:Int = 10
+let CentaurFullPv:Int = 10
+var CentaurDammage:Int = 3
 
 //Parameters of the elf
-var elfPv:Int = 200
-let elfFullPv:Int = 200
-var elfDammage:Int = 20
+var elfPv:Int = 20
+let elfFullPv:Int = 20
+var elfDammage:Int = 2
 
 //Parameters of the magus
-var magusPv:Int = 100
-let magusFullPv:Int = 100
-var magusRecovery:Int = 25
+var magusPv:Int = 10
+let magusFullPv:Int = 10
+var magusRecovery:Int = 3
 
 //Parameter of the magic weapon 
-var magicDamage:Int = 40
+var magicDamage:Int = 5
 
 

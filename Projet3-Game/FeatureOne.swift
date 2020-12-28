@@ -26,13 +26,13 @@ func nameTeam (){
     
     print("⏳ - Player 1, please enter the name of your team - ⌛️  ")
     var nameTeam: String
-    nameTeam = readLine()! // Returns a string read from standard input
+    nameTeam = limitString() // Returns a string read from standard input
     team1.nameTeam = nameTeam.capitalized //Assigns the return value to the variable with the first letter in upper case only
     sleep(1)
     print("✅ Player 1, your team name is \(team1.nameTeam) ✅\n---------------------------------------------------------------------------------------------------------------")
     sleep(1)
     print("⌛️ - Player 2, please enter the name of your team - ⌛️ ")
-    nameTeam = readLine()! // Returns a string read from standard input
+    nameTeam = limitString() // Returns a string read from standard input
     team2.nameTeam = nameTeam.capitalized //Assigns the return value to the variable with the first letter in upper case only
     sleep(1)
     print("✅ Player 2, your team name is \(team2.nameTeam) ✅\n-----------------------------------------------------------------------------------------------------------------")
@@ -41,41 +41,7 @@ func nameTeam (){
     
 }
 
-//Give a name to the character
-func editTeam(nbCharact:Int)  {
-    var choiceIsOK = false// Boolean to validate console return
-    numberOfCharacter += 1 //Counter increment
-    while choiceIsOK == false { //Loop in relation to the validation of the choice
-        print("⌛️ - Please choose a name for it - ⌛️")
-        let nameCharacter = readLine()! // Returns a string read from standard input
-        let checkName = checkNameDifferent(name: nameCharacter) //Check that the name is not used
-        if checkName == true {
-            switch nbCharact {
-            case 1:
-                addToTeam(numberCharacter: numberOfCharacter, character: Knight(playerName: nameCharacter.capitalized)) //Adding the character to the team
-            case 2:
-                addToTeam(numberCharacter: numberOfCharacter, character: Goblin(playerName: nameCharacter.capitalized)) //Adding the character to the team
-            case 3:
-                addToTeam(numberCharacter: numberOfCharacter, character: Ogre(playerName: nameCharacter.capitalized)) //Adding the character to the team
-            case 4:
-                addToTeam(numberCharacter: numberOfCharacter, character: Centaur(playerName: nameCharacter.capitalized)) //Adding the character to the team
-            case 5:
-                addToTeam(numberCharacter: numberOfCharacter, character: Elf(playerName: nameCharacter.capitalized)) //Adding the character to the team
-            case 6:
-                addToTeam(numberCharacter: numberOfCharacter, character: Magus(playerName: nameCharacter.capitalized)) //Adding the character to the team
-            default:
-                print("‼️ This number is not correct ‼️")
-            }
-            
-            nameCharacterList.append(nameCharacter.uppercased()) //Adding the name to the list
-            choiceIsOK = true //Changing the Boolean value if the name is not used
-        }else{
-            print("⛔️ This name is already in use ⛔️")
-            choiceIsOK = false //Changing the Boolean value if the name is used
-            
-        }
-    }
-}
+
 
 //Choose the 3 characters that make up the team
 func chooseCharacter() {
@@ -108,6 +74,42 @@ func chooseCharacter() {
     numberOfCharacter = 0 //reset counter
 }
 
+//Give a name to the character
+func editTeam(nbCharact:Int)  {
+    var choiceIsOK = false// Boolean to validate console return
+    numberOfCharacter += 1 //Counter increment
+    while choiceIsOK == false { //Loop in relation to the validation of the choice
+        print("⌛️ - Please choose a name for it - ⌛️")
+        let nameCharacter = limitString()// Returns a string read from standard input
+        let checkName = checkNameDifferent(name: nameCharacter) //Check that the name is not used
+        if checkName == true {
+            switch nbCharact {
+            case 1:
+                addToTeam(numberCharacter: numberOfCharacter, character: Knight(playerName: nameCharacter.capitalized)) //Adding the character to the team
+            case 2:
+                addToTeam(numberCharacter: numberOfCharacter, character: Goblin(playerName: nameCharacter.capitalized)) //Adding the character to the team
+            case 3:
+                addToTeam(numberCharacter: numberOfCharacter, character: Ogre(playerName: nameCharacter.capitalized)) //Adding the character to the team
+            case 4:
+                addToTeam(numberCharacter: numberOfCharacter, character: Centaur(playerName: nameCharacter.capitalized)) //Adding the character to the team
+            case 5:
+                addToTeam(numberCharacter: numberOfCharacter, character: Elf(playerName: nameCharacter.capitalized)) //Adding the character to the team
+            case 6:
+                addToTeam(numberCharacter: numberOfCharacter, character: Magus(playerName: nameCharacter.capitalized)) //Adding the character to the team
+            default:
+                print("‼️ This number is not correct ‼️")
+            }
+            
+            nameCharacterList.append(nameCharacter.uppercased()) //Adding the name to the list
+            choiceIsOK = true //Changing the Boolean value if the name is not used
+        }else{
+            print("⛔️ This name is already in use ⛔️")
+            choiceIsOK = false //Changing the Boolean value if the name is used
+            
+        }
+    }
+}
+
 //Function that checks whether the name entered is already in the list, it returns a boolean
 func checkNameDifferent (name:String) -> Bool {
     
@@ -115,8 +117,8 @@ func checkNameDifferent (name:String) -> Bool {
     var test:Bool = true //Initialization of the boolean
     
     //Loop to compare the parameter with all the data in the list.
-    for unNom in nameCharacterList {
-        if name == unNom {
+    for names in nameCharacterList {
+        if name == names {
             test = false // If the parameter is identical to one of the values in the list, then the boolean value is false.
             return test
         }
@@ -143,4 +145,14 @@ func addToTeam(numberCharacter: Int, character: Character) {
     }
 }
 
-
+/*
+ Function which returns a string after checking its length
+ */
+func limitString() -> String {
+    var string = readLine()!
+    if string.count > 20 { //checking the length of the character string
+        string = String(string.utf16.prefix(20))!
+        print("‼️You have reached the maximum of 20 characters‼️")
+    }
+    return string
+}
